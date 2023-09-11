@@ -1,0 +1,1500 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background: url("../img/header_bg.png") no-repeat center top/cover;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.header__container {
+  max-width: 1176px;
+  margin: 0px auto;
+  padding: 0px 23px;
+}
+
+@media (min-width: 1230px) {
+  .header__row {
+    padding-top: calc(30px + 84 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .header__row {
+    padding-top: calc(30px + 84 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .header__row {
+    padding-bottom: calc(24px + 40 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .header__row {
+    padding-bottom: calc(24px + 40 * (100vw - 320px) /1230);
+  }
+}
+
+.header__title a {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .header__title a {
+    font-size: calc(50px + 258.4 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .header__title a {
+    font-size: calc(50px + 152 * (100vw / 1400));
+  }
+}
+
+.header__title span {
+  color: #ffc600;
+}
+
+.header__subtitle {
+  max-width: 400px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .header__subtitle {
+    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .header__subtitle {
+    font-size: calc(10px + 8 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .header__subtitle {
+    padding-bottom: calc(14px + 16 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .header__subtitle {
+    padding-bottom: calc(14px + 16 * (100vw - 320px) /1230);
+  }
+}
+
+.header__download-link a {
+  color: #ffc600;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 767px) {
+  .header__download-link a {
+    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .header__download-link a {
+    font-size: calc(10px + 8 * (100vw / 1400));
+  }
+}
+
+.header__download-link a:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header-bottom {
+  background: url("../img/header_img.png") no-repeat center top/cover;
+  height: 500px;
+}
+
+@media (min-width: 1230px) {
+  .header-bottom__row {
+    padding-top: calc(20px + 50 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .header-bottom__row {
+    padding-top: calc(20px + 50 * (100vw - 320px) /1230);
+  }
+}
+
+.header-bottom__title {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+}
+@media (max-width: 767px) {
+  .header-bottom__title {
+    font-size: calc(20px + 68 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .header-bottom__title {
+    font-size: calc(20px + 40 * (100vw / 1400));
+  }
+}
+
+.header-bottom__title span {
+  color: #ffc600;
+}
+
+.header-bottom__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 1230px) {
+  .header-bottom__list {
+    padding-top: calc(20px + 40 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .header-bottom__list {
+    padding-top: calc(20px + 40 * (100vw - 320px) /1230);
+  }
+}
+
+.header-bottom__list a {
+  color: #ffc600;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 767px) {
+  .header-bottom__list a {
+    font-size: calc(10px + 13.6 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .header-bottom__list a {
+    font-size: calc(10px + 8 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .header-bottom__list a {
+    padding-right: calc(14px + 26 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .header-bottom__list a {
+    padding-right: calc(14px + 26 * (100vw - 320px) /1230);
+  }
+}
+
+.header-bottom__list a:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header-bottom__list a:last-child {
+  padding: 0px;
+}
+
+.header__body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about__container {
+  max-width: 1060px;
+  margin: 0px auto;
+}
+
+.about-top__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 1230px) {
+  .about-top__row {
+    padding-top: calc(20px + 16 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-top__row {
+    padding-top: calc(20px + 16 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .about-top__row {
+    padding-bottom: calc(20px + 52 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-top__row {
+    padding-bottom: calc(20px + 52 * (100vw - 320px) /1230);
+  }
+}
+
+.about-top__left-title {
+  color: #717171;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .about-top__left-title {
+    font-size: calc(15px + 25.5 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .about-top__left-title {
+    font-size: calc(15px + 15 * (100vw / 1400));
+  }
+}
+
+.about-top__left-subtitle {
+  color: #000000;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .about-top__left-subtitle {
+    font-size: calc(30px + 85 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .about-top__left-subtitle {
+    font-size: calc(30px + 50 * (100vw / 1400));
+  }
+}
+
+.about-top__left-subtitle span {
+  color: #ffc600;
+}
+
+@media (min-width: 1230px) {
+  .about-top__right_item {
+    padding-left: calc(50px + 136 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-top__right_item {
+    padding-left: calc(50px + 136 * (100vw - 320px) /1230);
+  }
+}
+
+.about-top__right-text, .about-top__right-title {
+  font-family: "Myriad Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .about-top__right-text, .about-top__right-title {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .about-top__right-text, .about-top__right-title {
+    font-size: calc(10px + 4 * (100vw / 1400));
+  }
+}
+
+.about-top__right-title {
+  color: #000000;
+}
+
+.about-top__right-text {
+  color: #595959;
+  padding: 24px 0px 0px 0px;
+}
+
+.about-bottom__container {
+  max-width: 870px;
+  margin: 0px auto;
+}
+
+.about-bottom__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 1230px) {
+  .about-bottom__row {
+    padding-bottom: calc(30px + 80 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-bottom__row {
+    padding-bottom: calc(30px + 80 * (100vw - 320px) /1230);
+  }
+}
+
+.about-bottom__item {
+  text-align: center;
+}
+@media (min-width: 1230px) {
+  .about-bottom__item {
+    padding-left: calc(25px + 20 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-bottom__item {
+    padding-left: calc(25px + 20 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .about-bottom__item {
+    padding-right: calc(25px + 20 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-bottom__item {
+    padding-right: calc(25px + 20 * (100vw - 320px) /1230);
+  }
+}
+
+.about-bottom__item-title {
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .about-bottom__item-title {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .about-bottom__item-title {
+    font-size: calc(12px + 6 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .about-bottom__item-title {
+    padding-top: calc(12px + 12 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-bottom__item-title {
+    padding-top: calc(12px + 12 * (100vw - 320px) /1230);
+  }
+}
+
+.about-bottom__item-text {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .about-bottom__item-text {
+    font-size: calc(7px + 5.1 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .about-bottom__item-text {
+    font-size: calc(7px + 3 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .about-bottom__item-text {
+    padding-top: calc(10px + 10 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .about-bottom__item-text {
+    padding-top: calc(10px + 10 * (100vw - 320px) /1230);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-top__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-top__right_item {
+    padding-left: 0px;
+    padding: 10px 0px 0px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .about-bottom__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 250px;
+  }
+  .about-bottom__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-bottom__item-img {
+    padding: 10px 0px 0px 0px;
+  }
+}
+.projects-top__title {
+  color: #000000;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .projects-top__title {
+    font-size: calc(15px + 25.5 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .projects-top__title {
+    font-size: calc(15px + 15 * (100vw / 1400));
+  }
+}
+
+.projects-top__title span {
+  color: #ffc600;
+}
+@media (max-width: 767px) {
+  .projects-top__title span {
+    font-size: calc(25px + 42.5 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .projects-top__title span {
+    font-size: calc(25px + 25 * (100vw / 1400));
+  }
+}
+
+.projects-top__menu {
+  padding: 23px 0px 26px 0px;
+}
+
+.projects-top__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects-top__list a {
+  color: #101010;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 9px;
+  font-weight: 400;
+  padding: 0px 20px 0px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.projects-top__list a:hover {
+  color: #ffc600;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.projects-top__list a:last-child {
+  padding: 0px;
+}
+
+.projects-bottom__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1230px) {
+  .proces {
+    padding: calc(0px + 64 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .proces {
+    padding: calc(0px + 64 * (100vw - 320px) /1230);
+  }
+}
+
+.proces-top__row {
+  padding: 66px 0px 43px 0px;
+}
+@media (min-width: 1230px) {
+  .proces-top__row {
+    padding-top: calc(20px + 46 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .proces-top__row {
+    padding-top: calc(20px + 46 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .proces-top__row {
+    padding-bottom: calc(15px + 28 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .proces-top__row {
+    padding-bottom: calc(15px + 28 * (100vw - 320px) /1230);
+  }
+}
+
+.proces-top__title {
+  color: #000000;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .proces-top__title {
+    font-size: calc(15px + 25.5 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .proces-top__title {
+    font-size: calc(15px + 15 * (100vw / 1400));
+  }
+}
+
+.proces-top__title span {
+  color: #ffc600;
+  font-size: 50px;
+}
+
+.proces-top__subtitle {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-weight: 400;
+  padding: 25px 0px;
+}
+@media (max-width: 767px) {
+  .proces-top__subtitle {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .proces-top__subtitle {
+    font-size: calc(10px + 6 * (100vw / 1400));
+  }
+}
+
+.proces-top__text {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .proces-top__text {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .proces-top__text {
+    font-size: calc(10px + 4 * (100vw / 1400));
+  }
+}
+
+.proces-bottom__container {
+  max-width: 860px;
+  margin: 0px auto;
+}
+
+.proces-bottom__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.proces-bottom__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media (min-width: 1230px) {
+  .proces-bottom__item-content {
+    padding: calc(0px + 25 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .proces-bottom__item-content {
+    padding: calc(0px + 25 * (100vw - 320px) /1230);
+  }
+}
+
+.proces-bottom__item-img {
+  text-align: center;
+}
+
+.proces-bottom__item-title {
+  color: #1d1d1d;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .proces-bottom__item-title {
+    font-size: calc(15px + 25.5 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .proces-bottom__item-title {
+    font-size: calc(15px + 15 * (100vw / 1400));
+  }
+}
+
+.proces-bottom__item-title span {
+  font-size: 50px;
+}
+
+.proces-bottom__item-subtitle {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .proces-bottom__item-subtitle {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .proces-bottom__item-subtitle {
+    font-size: calc(10px + 6 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .proces-bottom__item-subtitle {
+    padding-top: calc(15px + 23 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .proces-bottom__item-subtitle {
+    padding-top: calc(15px + 23 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .proces-bottom__item-subtitle {
+    padding-bottom: calc(10px + 15 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .proces-bottom__item-subtitle {
+    padding-bottom: calc(10px + 15 * (100vw - 320px) /1230);
+  }
+}
+
+.proces-bottom__item-text {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .proces-bottom__item-text {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .proces-bottom__item-text {
+    font-size: calc(10px + 4 * (100vw / 1400));
+  }
+}
+
+@media (max-width: 767px) {
+  .proces-bottom__item-img img {
+    max-width: 300px;
+  }
+  .proces-bottom__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+  }
+  .proces-bottom__item-content {
+    padding: 10px;
+  }
+}
+.services {
+  background: url("../img/services_bg.png") no-repeat top center/cover;
+  padding: 41px 0px 20px 0px;
+}
+
+.services__top {
+  color: #ffffff;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .services__top {
+    font-size: calc(20px + 17 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .services__top {
+    font-size: calc(20px + 10 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .services__top {
+    padding-bottom: calc(20px + 35 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .services__top {
+    padding-bottom: calc(20px + 35 * (100vw - 320px) /1230);
+  }
+}
+
+.services__top span {
+  color: #ffc600;
+}
+@media (max-width: 767px) {
+  .services__top span {
+    font-size: calc(30px + 34 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .services__top span {
+    font-size: calc(30px + 20 * (100vw / 1400));
+  }
+}
+
+.services__bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 1230px) {
+  .services__bottom-row {
+    padding-left: calc(0px + 500 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .services__bottom-row {
+    padding-left: calc(0px + 500 * (100vw - 320px) /1230);
+  }
+}
+
+@media (min-width: 1230px) {
+  .services__bottom-item {
+    padding-left: calc(5px + 40 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .services__bottom-item {
+    padding-left: calc(5px + 40 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .services__bottom-item {
+    padding-right: calc(5px + 40 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .services__bottom-item {
+    padding-right: calc(5px + 40 * (100vw - 320px) /1230);
+  }
+}
+
+.services__bottom-item-title {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .services__bottom-item-title {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .services__bottom-item-title {
+    font-size: calc(12px + 6 * (100vw / 1400));
+  }
+}
+
+.services__bottom-item-text {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 11px;
+  font-weight: 400;
+  width: 225px;
+}
+@media (min-width: 1230px) {
+  .services__bottom-item-text {
+    padding-top: calc(10px + 15 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .services__bottom-item-text {
+    padding-top: calc(10px + 15 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .services__bottom-item-text {
+    padding-bottom: calc(25px + 50 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .services__bottom-item-text {
+    padding-bottom: calc(25px + 50 * (100vw - 320px) /1230);
+  }
+}
+
+@media (min-width: 1230px) {
+  .team {
+    padding-top: calc(30px + 55 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .team {
+    padding-top: calc(30px + 55 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .team {
+    padding-bottom: calc(51px + 130 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .team {
+    padding-bottom: calc(51px + 130 * (100vw - 320px) /1230);
+  }
+}
+
+.team__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team__title {
+  color: #000000;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.team__title span {
+  color: #ffc600;
+  font-size: 50px;
+}
+
+.team__item-title {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 624px;
+}
+
+.team__item-subtitle {
+  font-family: "Myriad Pro";
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 25px 0px 35px 0px;
+}
+
+.team__item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team__item-item {
+  text-align: center;
+  padding: 0px 20px 0px 0px;
+}
+
+.team__item-item:last-child {
+  padding: 0px;
+}
+
+.team__item-item-name {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 600;
+  padding: 16px 0px 0px 0px;
+}
+
+.team__item-item-job-title {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 860px) {
+  .team__item-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team__item-item {
+    padding: 0px 5px 10px 5px;
+  }
+}
+.testimonials {
+  background: #000000;
+}
+@media (min-width: 1230px) {
+  .testimonials {
+    padding-top: calc(30px + 25 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .testimonials {
+    padding-top: calc(30px + 25 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .testimonials {
+    padding-bottom: calc(70px + 66 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .testimonials {
+    padding-bottom: calc(70px + 66 * (100vw - 320px) /1230);
+  }
+}
+
+.testimonials__title {
+  color: #ffffff;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.testimonials__title span {
+  color: #ffc600;
+  font-size: 50px;
+}
+
+.testimonials__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials__item-content {
+  padding: 0px 90px 0px 0px;
+}
+
+.testimonials__item-title {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonials__item-subtitle {
+  color: #ffffff;
+  font-family: "Myriad Pro - It";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.testimonials__item-right {
+  text-align: center;
+}
+
+.testimonials__item-right_name {
+  color: #ffffff;
+  font-family: "Myriad Pro - Semibold";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonials__item-right-job-title {
+  color: #ffffff;
+  font-family: "Myriad Pro - It";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .testimonials__title {
+    text-align: center;
+  }
+  .testimonials__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .testimonials__item-content {
+    padding: 0px;
+    text-align: center;
+  }
+  .testimonials__item-right {
+    padding: 20px 0px 0px 0px;
+  }
+}
+@media (min-width: 1230px) {
+  .blog {
+    padding-top: calc(10px + 10 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog {
+    padding-top: calc(10px + 10 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .blog {
+    padding-bottom: calc(40px + 75 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog {
+    padding-bottom: calc(40px + 75 * (100vw - 320px) /1230);
+  }
+}
+
+.blog__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog__title {
+  color: #000000;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .blog__title {
+    font-size: calc(15px + 25.5 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .blog__title {
+    font-size: calc(15px + 15 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .blog__title {
+    padding-top: calc(0px + 30 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog__title {
+    padding-top: calc(0px + 30 * (100vw - 320px) /1230);
+  }
+}
+
+.blog__title span {
+  color: #ffc600;
+}
+@media (max-width: 767px) {
+  .blog__title span {
+    font-size: calc(30px + 34 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .blog__title span {
+    font-size: calc(30px + 20 * (100vw / 1400));
+  }
+}
+
+.blog__left-item-menu {
+  padding-right: 35px;
+}
+@media (min-width: 1230px) {
+  .blog__left-item-menu {
+    padding-left: calc(0px + 85 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog__left-item-menu {
+    padding-left: calc(0px + 85 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .blog__left-item-menu {
+    padding-top: calc(10px + 20 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog__left-item-menu {
+    padding-top: calc(10px + 20 * (100vw - 320px) /1230);
+  }
+}
+
+.blog__left-item-list li {
+  padding-bottom: 5px;
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  width: 150px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 1230px) {
+  .blog__left-item-list li {
+    padding-top: calc(10px + 15 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog__left-item-list li {
+    padding-top: calc(10px + 15 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 767px) {
+  .blog__left-item-list li {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .blog__left-item-list li {
+    font-size: calc(12px + 6 * (100vw / 1400));
+  }
+}
+
+.blog__left-item-list li:hover {
+  color: #ffc600;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.blog__right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog__right-item-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 180px;
+  margin-left: 80px;
+}
+
+.blog__right-item-item-date {
+  color: #ffc600;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+@media (min-width: 1230px) {
+  .blog__right-item-item-date {
+    padding-bottom: calc(10px + 20 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog__right-item-item-date {
+    padding-bottom: calc(10px + 20 * (100vw - 320px) /1230);
+  }
+}
+
+.blog__right-item-item-title {
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  font-size: 15px;
+}
+@media (min-width: 1230px) {
+  .blog__right-item-item-title {
+    padding-bottom: calc(10px + 10 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .blog__right-item-item-title {
+    padding-bottom: calc(10px + 10 * (100vw - 320px) /1230);
+  }
+}
+
+.blog__right-item-item-text {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0px 0px 10px 0px;
+}
+
+@media (max-width: 829px) {
+  .blog__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog__right-item-item {
+    margin: 0px 3px;
+    text-align: center;
+  }
+}
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__left-row {
+  background: #000000;
+  padding-bottom: 42px;
+  padding-left: 26px;
+}
+@media (min-width: 1230px) {
+  .footer__left-row {
+    padding-top: calc(30px + 92 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .footer__left-row {
+    padding-top: calc(30px + 92 * (100vw - 320px) /1230);
+  }
+}
+@media (min-width: 1230px) {
+  .footer__left-row {
+    padding-right: calc(20px + 77 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .footer__left-row {
+    padding-right: calc(20px + 77 * (100vw - 320px) /1230);
+  }
+}
+
+.footer__left-title {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  padding: 0px 0px 36px 0px;
+}
+@media (max-width: 767px) {
+  .footer__left-title {
+    font-size: calc(20px + 68 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .footer__left-title {
+    font-size: calc(20px + 40 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .footer__left-title {
+    padding-bottom: calc(0px + 36 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .footer__left-title {
+    padding-bottom: calc(0px + 36 * (100vw - 320px) /1230);
+  }
+}
+
+.footer__left-title span {
+  color: #ffc600;
+  font-style: normal;
+}
+
+.footer__left-list li {
+  color: #ffffff;
+  font-family: "Myriad Pro - Semibold";
+  font-weight: 400;
+  padding: 24px 0px 0px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 767px) {
+  .footer__left-list li {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .footer__left-list li {
+    font-size: calc(10px + 6 * (100vw / 1400));
+  }
+}
+
+.footer__left-list li:hover {
+  color: #ffc600;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0px 0px 0px;
+}
+@media (min-width: 1230px) {
+  .footer__links {
+    padding-top: calc(25px + 35 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .footer__links {
+    padding-top: calc(25px + 35 * (100vw - 320px) /1230);
+  }
+}
+
+.footer__link {
+  padding: 0px 2px 0px 0px;
+}
+
+.footer__right {
+  background: url("../img/footer_bg.png") no-repeat center top/cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 78%;
+}
+
+.footer__text {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-weight: 700;
+  padding-left: 25px;
+}
+@media (max-width: 767px) {
+  .footer__text {
+    font-size: calc(40px + 120.7 * ((100vw - 320px) / 1400));
+  }
+}
+@media (min-width: 767px) {
+  .footer__text {
+    font-size: calc(40px + 71 * (100vw / 1400));
+  }
+}
+@media (min-width: 1230px) {
+  .footer__text {
+    padding-top: calc(100px + 245 * (100vw - 320px) /1230);
+  }
+}
+@media (max-width: 1230px) {
+  .footer__text {
+    padding-top: calc(100px + 245 * (100vw - 320px) /1230);
+  }
+}
+
+.footer__text span {
+  color: #ffc600;
+  font-style: normal;
+}
+
+@media (max-width: 500px) {
+  .footer__right {
+    width: 100%;
+  }
+}
